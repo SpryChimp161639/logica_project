@@ -1,0 +1,106 @@
+body { /* головний фон шрифт та інше*/
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0e7e7;
+    /*фон*/
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+}
+/* головна коробка */
+.mbox {
+    background-image: linear-gradient(#404F6488 0%, #526580AC 50%, #404F6488 100%);
+    backdrop-filter: blur(5px);
+    border: 2px solid #637B9CAC;
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    margin: 0% 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 9%;
+    box-shadow: 10px 10px 20px #00000088;
+}
+/* бокова коробка */
+.sbox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background-color: #8799B2A1;
+    border-right: 2px solid #637B9CAC;
+    margin-right: 10%;
+}
+/* основна коробка */
+.box {
+    background-color: #93A1B678;
+    border: 2px solid #93A1B6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    min-height: 400px;
+    flex-shrink: 0;
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #00000088;
+}
+/* верхня панель */
+.bheader {
+    background-image: linear-gradient(#8799B2E1 0%, #637B9CAC 90%);
+    backdrop-filter: blur(5px);
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid #637B9CAC;
+    border-bottom: none;
+    margin: 5% 5% 0% 5%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 20px #00000088;;
+}
+/* кнопка */
+.buton {
+    background-color: #93A1B6;
+    margin: 5px 2px 5px 2px;
+    padding: 2px 5px 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* активна кнопка */
+.butonon {
+    background-color: #526580;
+    margin: 5px 2px 5px 2px;
+    padding: 2px 5px 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+img {
+    border-radius: 10px;
+}
+/* вікно помилки */
+.window {
+    visibility: hidden;
+}
+.window.op {
+    visibility: visible;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}

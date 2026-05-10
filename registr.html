@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- 7.css це онлайн фреймворк як bootstrap але для стилю віндовса 7 -->
+    <!-- я її закачав щоб вона була швидшою -->
+    <link rel="stylesheet" href="7.css">
+</head>
+<body>
+    <!-- верхня панель шоб красіо було -->
+    <div class="bheader">
+        <h1>нова гестія</h1>
+    </div>
+    <!-- головна коробка -->
+    <div class="mbox">
+        <!-- бокова коробка -->
+        <div class="sbox">
+            <!-- навігаційна кнопка -->
+            <a class="buton" href="main.html">головна</a>
+            <a class="buton" href="info.html">про місію</a>
+            <a class="butonon" href="#">онлайн реєстрація</a>
+        </div>
+        <!-- коробка реєстрації -->
+        <div class="box">
+            <h3>реєстрація</h3>
+            <input type="text" placeholder="впишіть своє ім'я">
+            <input type="number" placeholder="ваш вік">
+            <input type="number" placeholder="ваш номер телефону">
+            <input type="text" placeholder="ваша кантактна e-mail">
+            <button id="opb">надіслати</button>
+        </div>
+        <div class="box">
+            <h2>деталі реєстрації</h2>
+            <p>вік лише з 21</p>
+            <p>після реєстрації вам прийде лист</p>
+            <p>в листі буде місце та ключ</p>
+            <p>ключ неможна нікому давати навіть представникам</p>
+            <p>якщо ключа немає означає вас не взято</p>
+        </div>
+    </div>
+    <div class="window" style="width: 300px" id="win">
+        <div class="title-bar">
+            <div class="title-bar-text">error</div>
+            <div class="title-bar-controls">
+                <button id="cbu" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h3 style="color: #000;">помилка з'єднання</h3>
+        </div>
+    </div>
+</body>
+<script src="reg.js"></script>
+</html>
